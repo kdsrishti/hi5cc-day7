@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>hi5cc-Day7</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/kd-styles.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<small id='text-change-color'>hi5cc</small>
+					<h2>Introduction to<br/>Creative Coding</h2>
+					<h6>day 7</h6>
+					<small>Karan Dudeja, Dec 2020</small>
+					<p class="text-muted">Srishti Manipal Institute of Art, Design and Technology<br/>
+						Interim 2020
+					</p>
+				</section>
+				
+				<section>
+					<section> 
+						<h2>Objects</h2>
+						<p><small class="text-muted">for object-oriented style of programming <br/> Note, these are different from and NOT the objects in Js</small></p>
+						<p><small>Terms to note:</small></p>
+						<small>
+							<ul>
+								<li>class</li>
+								<li>constructor</li>
+								<li>methods</li>
+							</ul>
+						</small>
+						<br/><br/>
+						<small><a class="text-green" href="https://p5js.org/reference/#/p5/class" target="_blank">📒class</a>
+							<br/><br/>
+							<a class="text-green" href="https://editor.p5js.org/karanDudeja/sketches/D4YP0RChg" target="_blank">Example.Objective-Dots</a>							
+						</small>
+					</section>
+					<section> 
+						<h4>Arrays</h4>
+						<p><small class="text-muted">one variable(container) for multiple values</small></p>
+						<small>
+						<ul>
+							<li>Datatype is Object<span class="text-gray"> &nbsp;&nbsp; of Arrays</span></li>
+							<li>Js has many handy functions for working with Arrays</li>	
+							<li>arrayName.length , will give the array's length</li>						
+						</ul>
+						</small>
+						<pre><code class="lang-js" data-line-numbers="1,4,8" data-trim data-noescape>				
+							let myArray = []; 
+							function setup(){
+							  ...
+							  myArray = ["hi", "there", "today"];
+							}
+							function draw(){
+							  ...
+							  text(myArray[0], 30, 50); //will show hi on the sketch
+							}
+							//let myArr1 = new Array(); also creates a new empty array
+							//let myArr2 = new Array(10); also creates a new array with length 10
+						</code></pre>
+						<br/>
+						<small><a class="text-green" href="https://github.com/processing/p5.js/wiki/JavaScript-basics#data-type-array" target="_blank">📒Arrays</a>
+							<a class="text-green" href="https://editor.p5js.org/karanDudeja/sketches/w4jb2t4la" target="_blank"> &nbsp;&nbsp;&nbsp; Example.GrayArray</a>
+						</small>
+					</section> 
+				</section>
+				<section>
+					<h3>🤹<br/>Activity 2.2</h3>
+					<p><small class="text-muted">Submission details on the Blog</small></p>
+					<small><p>On <span class="text-pink">TWO</span> canvases with dimensions <span class="text-pink">500 x 500</span></p>
+					<ul>
+						<li><span class="text-pink">Sketch 1.</span> to have a few/many squares created <span class="text-yellow">on mouse-click</span> having different shades of a new Hue</li>
+						<li>Hovering on any of these turns them either Black or White, i.e. either the top/left ones turn black or the bottom/right ones turn white or vice-versa</li>
+						<br/>
+						<li><span class="text-pink">Sketch 2.</span> Will use an array of words, e.g. from the Silent Night Christmas carol</li>
+						<li>And display them in random locations <span class="text-yellow">on press of the space-bar</span></li>			
+					</ul>
+					</small>					
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script src="js/kd-script.js"></script>
+	</body>
+</html>
